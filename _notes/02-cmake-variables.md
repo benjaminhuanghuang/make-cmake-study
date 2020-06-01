@@ -1,0 +1,15 @@
+- CMAKE_VERSION
+
+- CMAKE_SOURCE_DIR
+
+- CMAKE_INSTLL_PREFIX
+  install path
+
+- $ENV{HOME}
+
+- PROJECT_NAME    
+
+- PROJECT_SOURCE_DIR
+  project full path
+
+- <PKG>_INCLUDE_DIR  and  <PKG>_LIBARIES
