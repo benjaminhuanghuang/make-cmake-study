@@ -1,0 +1,11 @@
+EXEBIN    = mian.exe
+SOURCES   = main.c hashtable.c
+FLAGS     = -std=c++11 -Wall 
+
+all: $(EXEBIN)
+
+$(EXEBIN) : $(SOURCES)
+	gcc $(FLAGS)  $(SOURCES) -o $(EXEBIN)
+
+clean :
+	rm -f $(EXEBIN)

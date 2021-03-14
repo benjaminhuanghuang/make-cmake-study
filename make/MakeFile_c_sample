@@ -1,0 +1,11 @@
+EXEBIN    = main.ext
+SOURCES   = main.c hashtable.c
+FLAGS     = -std=c99 -Wall -Wshadow -Wvla -pedantic -O3
+
+all: $(EXEBIN)
+
+$(EXEBIN) : $(SOURCES)
+	gcc $(FLAGS) $(SOURCES) -o $(EXEBIN)
+
+clean :
+	rm -f $(EXEBIN)
