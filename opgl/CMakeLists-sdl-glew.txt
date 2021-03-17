@@ -41,9 +41,9 @@ set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
                         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
-                        ${SDL2_LIBRARIES} 
-                        ${SDL2_IMAGE_LIBRARIES} 
-                        ${SDL2_TTF_LIBRARIES} 
+                        ${SDL2_LIBRARY} 
+                        ${SDL2_IMAGE_LIBRARY} 
+                        ${SDL2_TTF_LIBRARY} 
                         ${GLEW_LIBRARY}   
                         ${OPENGL_LIBRARY}
                        )
