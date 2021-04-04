@@ -1,0 +1,9 @@
+CXX = g++
+
+COMPILER_FLAGS = -std=c++11 -pthread
+
+multi-thread : multi-thread.cpp
+	$(CXX) $(COMPILER_FLAGS) $< $(INCLUDES) $(LIBS) -o $@.exe
+
+clean:
+	rm -rf *.exe *.gdb *.o
